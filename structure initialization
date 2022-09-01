@@ -1,0 +1,17 @@
+
+
+
+                     //structure initialization 
+
+#include<stdio.h>
+struct student 
+{
+int id;
+char name[20];
+char address[60];
+};
+
+int main()
+{
+  struct student s1 = { 210473 , "affan" , "banglore" };    // the contents are stored with structure fields in the order they are written                    
+}
