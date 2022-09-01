@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct student                    //name of the data type
+{
+int id;
+char name[20];                    //these are called structure members or structure fields
+char address[60];
+};                                //end of the structure  declaration and memory is not allocated yet
+
+
+int main()
+{
+  struct student s1;                //s1 is variable of type struct student and now the memory for s1 is allocated
+}
+
