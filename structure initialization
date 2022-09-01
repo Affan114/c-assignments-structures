@@ -1,7 +1,7 @@
 
 
 
-                     //structure initialization 
+                     //program 1 structure initialization 
 
 #include<stdio.h>
 struct student 
@@ -15,3 +15,57 @@ int main()
 {
   struct student s1 = { 210473 , "affan" , "banglore" };    // the contents are stored with structure fields in the order they are written                    
 }
+
+
+                    //program 2 structure initialization 
+                    
+                    
+                    
+    #include<stdio.h>
+struct student 
+{
+int id;
+char name[20];
+char address[60];
+};
+s1={0210473,"affan","banglore"};
+
+int main()
+{
+   
+}
+                      
+                                 //program 3 strucutre initialization
+                      
+                      #include<stdio.h>
+struct student 
+{
+int id;
+char name[20];
+char address[60];
+}s1={0210473,"affan","banglore"};
+
+int main()
+{
+   return 0;
+}
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
