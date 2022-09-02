@@ -1,0 +1,23 @@
+
+                                                  //accessing structure fiels with dot operator
+
+#include<stdio.h>
+
+struct student 
+{
+int id;
+char name[20];
+char address[60];
+};
+
+
+int main()
+{
+  struct student s1={.name="affan",.address="banglore",.id=2232410};         //accessing using dot if order is not maintained
+  
+  printf("%lu %s %s",s1.id,s1.name,s1.address);                             //accessing using dot and printing it                       
+}
+
+OUTPUT:
+
+2232410 affan banglore
