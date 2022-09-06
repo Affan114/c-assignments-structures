@@ -29,3 +29,10 @@ s2=s1;                                                //assignment operation on 
 printf("%s",s2.name);
 return 0;
 }  
+
+
+OUTPUT:
+
+enter the name of the user
+affan shariff
+affan shariff
