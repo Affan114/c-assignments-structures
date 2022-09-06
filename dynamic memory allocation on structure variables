@@ -1,0 +1,35 @@
+
+
+//dynamic memory allocation for structure variables
+
+#include<stdio.h>
+
+#include<string.h>
+
+typedef struct student
+{
+int id;
+char *name,*address;
+float new[100];
+}student;
+
+
+student data()
+{
+  student s;
+  s.name=(char *)malloc(30*sizeof(char));                        // alloacating memory in heap for the member "name" and for "address"
+  s.address=(char *)malloc(150*sizeof(char));
+  return s;
+}
+
+
+int main()
+{
+student s1;
+s1=data();
+strcpy(s1.name,"helloooo");                                   
+printf("%s",s1.name);
+
+}
+output:
+helloooo
