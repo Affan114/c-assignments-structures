@@ -1,0 +1,31 @@
+
+
+
+
+
+#include <stdio.h>
+#include<stdlib.h>
+
+struct student  {
+int id;
+char *name;                         //strucutre members
+char address[60];
+};
+
+
+struct student data(struct student s)                     //formal argument f type struct student
+{
+  s.name =malloc(sizeof(char));                           //dynamaic memory allocation
+  printf("enter the name of the user\n");
+  scanf("%[^\n]s",s.name);                                //reading the elements till enter key is pressed
+  return s;
+}
+
+
+int main(void) {
+struct student s1;
+s1=data(s1);                                          //function call
+s2=s1;                                                //assignment operation on variable of struct student data type
+printf("%s",s2.name);
+return 0;
+}  
