@@ -1,0 +1,47 @@
+
+
+
+#include<stdio.h>
+
+#include<string.h>
+
+char *data(student s2);                        //function prototype
+
+typedef struct student
+{
+int id;
+char *name,*address;
+
+}student;
+
+
+
+int main()
+{
+student s2;
+char *s1;
+s1=data(s2);                            //function call
+
+printf("%s",s1);
+  
+
+}
+
+
+
+char *data(student s2)
+{
+
+  
+  s2.name=(char *)malloc(30*sizeof(char));                                 //dynamic memory allocation 
+  s2.address=(char *)malloc(150*sizeof(char));
+
+ strcpy(s.name,"helloooo");                                                    
+ 
+  return s2.name;                                                           //returning structure members variable
+}
+
+
+output:
+helloooo
+
