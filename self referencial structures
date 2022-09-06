@@ -1,0 +1,49 @@
+
+
+//demo for self referencial functions
+
+
+#include<stdio.h>
+
+
+struct college
+{
+   struct student 
+    {
+        int id;
+        char name[20];
+        char address[60];
+     }student;
+
+    struct 
+    {
+        int id;
+        char name[20];
+        char address[60];
+     }faculty;                             //variable name
+};
+
+
+
+int main()
+{
+   struct college member;
+   
+   member.student.id=11232;           //manner to access a particular structure
+   member.faculty.id=777;
+   
+   printf("%d\n",member.student.id);
+   printf("%p\n",&member.student.id);
+   
+   printf("%d\n",member.faculty.id);
+   printf("%p\n",&member.faculty.id);
+  
+}
+
+
+
+OUTPUT:
+11232
+0x7fff63c40b60
+777
+0x7fff63c40bb4
