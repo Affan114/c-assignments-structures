@@ -1,0 +1,39 @@
+
+
+
+
+//returning structure
+
+#include<stdio.h>
+
+#include<string.h>
+
+typedef struct student
+{
+int id;
+char name[20],address[60];
+float new[100];
+}student;
+
+
+student data(student s)
+{
+  s.id=321;
+  return s;
+}
+
+
+int main()
+{
+ student s1;
+  s1=data(s1);
+  printf("%d",s1.id);
+
+}
+
+OUTPUT:
+321
+
+
+
+
