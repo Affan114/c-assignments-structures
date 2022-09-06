@@ -1,0 +1,32 @@
+
+
+                                  //returning particular structure variables
+
+
+
+#include<stdio.h>
+
+#include<string.h>
+
+typedef struct student                                   //saving time by tydef ing struct student datatype
+{
+int id;
+char name[20],address[60];
+float new[100];
+}student;
+
+
+int data(student s)                           //type has changed to int cause id is of type int 
+{
+  s.id=321;
+  return s.id;
+}
+
+
+int main()
+{
+ student s1;
+  s1.id=data(s1);
+  printf("%d",s1.id);
+
+}
