@@ -1,0 +1,20 @@
+
+// program to show usage of bit fields and to show the size of struct datatype
+
+
+#include <stdio.h>
+
+struct 
+{
+    unsigned char upper : 4;       //4 bits
+    unsigned char lower : 4;        //4 bits
+}nibble;
+int main()
+{
+    nibble.upper=0x0A;
+    nibble.lower=0x02;
+    printf("%d ",sizeof(nibble));     //returns 1 byte 
+    return 0;
+}
+output:
+1
